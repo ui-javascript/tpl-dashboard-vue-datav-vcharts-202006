@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import datav from './components/datav/index.vue'
+import datav from './pages/index.vue'
 
 export default {
   name: 'App',

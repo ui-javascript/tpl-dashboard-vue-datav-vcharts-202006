@@ -41,17 +41,17 @@
 </template>
 
 <script>
-import TopLeftCmp from './TopLeftCmp'
-import TopMiddleCmp from './TopMiddleCmp'
-import TopRightCmp from './TopRightCmp'
+import TopLeftCmp from '@/components/datav/TopLeftCmp'
+import TopMiddleCmp from '@/components/datav/TopMiddleCmp'
+import TopRightCmp from '@/components/datav/TopRightCmp'
 
-import BottomLeftChart1 from './BottomLeftChart1'
-import BottomLeftChart2 from './BottomLeftChart2'
+import BottomLeftChart1 from '@/components/datav/BottomLeftChart1'
+import BottomLeftChart2 from '@/components/datav/BottomLeftChart2'
 
-import BottomRightTable1 from './BottomRightTable1'
-import BottomRightTable2 from './BottomRightTable2'
-import BottomRightTable3 from './BottomRightTable3'
-import BottomRightTable4 from './BottomRightTable4'
+import BottomRightTable1 from '@/components/datav/BottomRightTable1'
+import BottomRightTable2 from '@/components/datav/BottomRightTable2'
+import BottomRightTable3 from '@/components/datav/BottomRightTable3'
+import BottomRightTable4 from '@/components/datav/BottomRightTable4'
 
 export default {
   name: 'DataView',
@@ -66,7 +66,7 @@ export default {
     BottomRightTable3,
     BottomRightTable4
   },
-  data () {
+  data() {
     return {}
   }
 }
@@ -80,7 +80,7 @@ export default {
   color: #fff;
 
   #dv-full-screen-container {
-    background-image: url('./img/bg.png');
+    background-image: url('/images/bg.png');
     background-size: 100% 100%;
     box-shadow: 0 0 3px blue;
     display: flex;
