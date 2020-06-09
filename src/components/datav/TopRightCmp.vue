@@ -11,7 +11,7 @@
 <script>
 export default {
   name: 'TopRightCmp',
-  data () {
+  data() {
     return {
       option: {
         legend: {

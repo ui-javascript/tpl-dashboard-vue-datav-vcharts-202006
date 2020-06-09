@@ -11,7 +11,7 @@
 <script>
 export default {
   name: 'TopMiddleCmp',
-  data () {
+  data() {
     return {
       option: {
         legend: {
@@ -55,7 +55,7 @@ export default {
             style: {
               fill: '#999'
             },
-            formatter ({ value }) {
+            formatter({ value }) {
               return value.toFixed(2)
             }
           },

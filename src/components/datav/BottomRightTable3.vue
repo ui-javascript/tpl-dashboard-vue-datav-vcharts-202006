@@ -2,7 +2,7 @@
   <div class="bottom-right-table-3">
     <dv-border-box-6>
       <div class="table-name">
-        <img src="./img/icon3.png" />常见故障排行
+        <img src="./img/icon3.png">常见故障排行
       </div>
 
       <dv-scroll-board :config="config" />
@@ -13,7 +13,7 @@
 <script>
 export default {
   name: 'BottomRightTable3',
-  data () {
+  data() {
     return {
       config: {
         data: [

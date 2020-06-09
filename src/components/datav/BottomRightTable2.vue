@@ -2,7 +2,7 @@
   <div class="bottom-right-table-2">
     <dv-border-box-6>
       <div class="table-name">
-        <img src="./img/icon2.png" />故障设备排行榜
+        <img src="./img/icon2.png">故障设备排行榜
       </div>
 
       <dv-scroll-board :config="config" />
@@ -13,7 +13,7 @@
 <script>
 export default {
   name: 'BottomRightTable2',
-  data () {
+  data() {
     return {
       config: {
         data: [

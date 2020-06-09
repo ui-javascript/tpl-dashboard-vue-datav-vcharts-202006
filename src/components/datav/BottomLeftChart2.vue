@@ -9,7 +9,7 @@
 <script>
 export default {
   name: 'BottomLeftChart2',
-  data () {
+  data() {
     return {
       option: {
         series: [

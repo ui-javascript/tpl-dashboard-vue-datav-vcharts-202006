@@ -17,9 +17,9 @@ module.exports = {
    * Detail: https://cli.vuejs.org/config/#publicpath
    */
   publicPath: '/',
-    // publicPath: process.env.NODE_ENV === 'production' ?
-    //   './' :
-    //   '/'
+  // publicPath: process.env.NODE_ENV === 'production' ?
+  //   './' :
+  //   '/'
   outputDir: 'dist',
   assetsDir: 'static',
   lintOnSave: process.env.NODE_ENV === 'development',
@@ -30,7 +30,7 @@ module.exports = {
     overlay: {
       warnings: false,
       errors: true
-    },
+    }
   },
   configureWebpack: {
     // provide the app's title in webpack's name field, so that
@@ -110,7 +110,7 @@ module.exports = {
                 }
               }
             })
-            
+
           config.optimization.runtimeChunk('single')
         }
       )
