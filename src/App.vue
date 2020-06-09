@@ -8,11 +8,11 @@
 import datav from './components/datav/index.vue'
 
 export default {
-  name: 'app',
+  name: 'App',
   components: {
     datav
   },
-  data () {
+  data() {
     return {}
   }
 }
