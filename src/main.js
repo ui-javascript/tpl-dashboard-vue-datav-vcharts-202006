@@ -14,6 +14,7 @@ import './assets/global.less'
 import router from './router'
 import App from './App.vue'
 
+// 暂时不打算放在原型链上
 // import echarts from "echarts";
 // Vue.prototype.$echarts = echarts;
 

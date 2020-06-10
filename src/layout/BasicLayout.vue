@@ -3,8 +3,9 @@
     <div class="header">
       <div style="flex: 2">Header</div>
       <div style="flex: 2">
-        <el-tabs v-model="currentTab">
-          <el-tab-pane v-for="item in router" :key="item.name" :name="item.name" :label="item.meta.title"></el-tab-pane>
+        <el-tabs v-model="currentTab" @tab-click="handleTabChange">
+          <el-tab-pane v-for="item in $router.options.routes[0].children" :key="item.name" :name="item.name"
+                       :label="item.meta.title"></el-tab-pane>
         </el-tabs>
       </div>
     </div>
@@ -29,16 +30,24 @@
       }
     },
     watch: {
-      'currentTab': function (val) {
-
-        this.$router.push({
-          name: val
-        });
-      },
+      // 'currentTab': function (val) {
+      //   this.$router.push({
+      //     name: val
+      //   });
+      // },
     },
     mounted() {
-      this.router = this.$router.options.routes[0].children
-      console.log(this.$router.options.routes[0].children)
+      // console.log(this.$router.options.routes[0].children)
+    },
+    methods: {
+      handleTabChange(tab, event) {
+        console.log(tab.name)
+        console.log(event)
+
+        this.$router.push({
+          name: tab.name
+        });
+      }
     }
 
   }
