@@ -1,15 +1,15 @@
 <template>
   <div class="mapIndex">
 
-    <dv-border-box-1 class="w-1/3" style="height: 33%;">
-      <ve-map class="border-box p-4" :data="chartData" :settings="chartSettings" />
+    <dv-border-box-1 class="w-1/3 overflow-hidden" style="height: 33%;">
+      <ve-map class="border-box p-4 h-full" :data="chartData" :settings="chartSettings" />
     </dv-border-box-1>
 
-    <dv-border-box-1 class="w-1/3" style="height: 33%;">
-      <div id="echartsDemo" ref="echartsDemo" class="border-box w-full p-4" style="height: 100%;" />
+    <dv-border-box-1 class="w-1/3 overflow-hidden" style="height: 33%;">
+      <div id="echartsDemo" ref="echartsDemo" class="border-box w-full p-4 h-full" />
     </dv-border-box-1>
 
-    <dv-border-box-1 class="w-1/3" style="height: 33%;">
+    <dv-border-box-1 class="w-1/3 overflow-hidden" style="height: 33%;">
     </dv-border-box-1>
 
   </div>
@@ -33,7 +33,7 @@ export default {
         ]
       },
       chartSettings: {
-        position: 'province/beijing'
+        // position: 'province/beijing'
       }
     }
   },

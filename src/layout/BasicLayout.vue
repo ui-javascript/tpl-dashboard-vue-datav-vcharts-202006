@@ -3,7 +3,7 @@
     <div class="header pl-4">
       <div style="flex: 2">Header</div>
       <div style="flex: 2">
-        <el-tabs v-model="currentTab" @tab-click="handleTabChange">
+        <el-tabs type="card" v-model="currentTab" @tab-click="handleTabChange">
           <el-tab-pane
             v-for="item in $router.options.routes[0].children"
             :key="item.name"
