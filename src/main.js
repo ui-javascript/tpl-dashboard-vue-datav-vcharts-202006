@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import ElementUI from 'element-ui';
+import ElementUI from 'element-ui'
 import DataV from '@jiaminghi/data-view'
 import VCharts from 'v-charts'
 import VeMap from 'v-charts/lib/map.common'
@@ -7,7 +7,7 @@ import VeMap from 'v-charts/lib/map.common'
 
 // 样式
 import 'normalize.css/normalize.css' // a modern alternative to CSS resets
-import 'element-ui/lib/theme-chalk/index.css';
+import 'element-ui/lib/theme-chalk/index.css'
 import './assets/global.less'
 
 // 组件

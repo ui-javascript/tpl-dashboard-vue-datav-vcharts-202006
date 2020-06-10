@@ -16,23 +16,23 @@
 
     <dv-border-box-1 class="main-container">
       <div class="mc-top">
-        <Top-Left-Cmp/>
-        <Top-Middle-Cmp/>
-        <Top-right-Cmp/>
+        <Top-Left-Cmp />
+        <Top-Middle-Cmp />
+        <Top-right-Cmp />
       </div>
       <div class="mc-bottom">
         <dv-border-box-6 class="bottom-left-container">
-          <dv-decoration-4 class="mcb-decoration-1" style="width:5px;height:45%;"/>
-          <dv-decoration-4 class="mcb-decoration-2" style="width:5px;height:45%;"/>
-          <Bottom-Left-Chart-1/>
-          <Bottom-Left-Chart-2/>
+          <dv-decoration-4 class="mcb-decoration-1" style="width:5px;height:45%;" />
+          <dv-decoration-4 class="mcb-decoration-2" style="width:5px;height:45%;" />
+          <Bottom-Left-Chart-1 />
+          <Bottom-Left-Chart-2 />
         </dv-border-box-6>
 
         <div class="bottom-right-container">
-          <Bottom-Right-Table-1/>
-          <Bottom-Right-Table-2/>
-          <Bottom-Right-Table-3/>
-          <Bottom-Right-Table-4/>
+          <Bottom-Right-Table-1 />
+          <Bottom-Right-Table-2 />
+          <Bottom-Right-Table-3 />
+          <Bottom-Right-Table-4 />
         </div>
       </div>
     </dv-border-box-1>
@@ -41,35 +41,35 @@
 </template>
 
 <script>
-  import TopLeftCmp from './cmpt/TopLeftCmp'
-  import TopMiddleCmp from './cmpt/TopMiddleCmp'
-  import TopRightCmp from './cmpt/TopRightCmp'
+import TopLeftCmp from './cmpt/TopLeftCmp'
+import TopMiddleCmp from './cmpt/TopMiddleCmp'
+import TopRightCmp from './cmpt/TopRightCmp'
 
-  import BottomLeftChart1 from './cmpt/BottomLeftChart1'
-  import BottomLeftChart2 from './cmpt/BottomLeftChart2'
+import BottomLeftChart1 from './cmpt/BottomLeftChart1'
+import BottomLeftChart2 from './cmpt/BottomLeftChart2'
 
-  import BottomRightTable1 from './cmpt/BottomRightTable1'
-  import BottomRightTable2 from './cmpt/BottomRightTable2'
-  import BottomRightTable3 from './cmpt/BottomRightTable3'
-  import BottomRightTable4 from './cmpt/BottomRightTable4'
+import BottomRightTable1 from './cmpt/BottomRightTable1'
+import BottomRightTable2 from './cmpt/BottomRightTable2'
+import BottomRightTable3 from './cmpt/BottomRightTable3'
+import BottomRightTable4 from './cmpt/BottomRightTable4'
 
-  export default {
-    name: 'DataView',
-    components: {
-      TopLeftCmp,
-      TopMiddleCmp,
-      TopRightCmp,
-      BottomLeftChart1,
-      BottomLeftChart2,
-      BottomRightTable1,
-      BottomRightTable2,
-      BottomRightTable3,
-      BottomRightTable4
-    },
-    data() {
-      return {}
-    }
+export default {
+  name: 'DataView',
+  components: {
+    TopLeftCmp,
+    TopMiddleCmp,
+    TopRightCmp,
+    BottomLeftChart1,
+    BottomLeftChart2,
+    BottomRightTable1,
+    BottomRightTable2,
+    BottomRightTable3,
+    BottomRightTable4
+  },
+  data() {
+    return {}
   }
+}
 </script>
 
 <style lang="less">
