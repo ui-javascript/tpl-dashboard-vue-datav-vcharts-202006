@@ -1,6 +1,6 @@
 <template>
   <dv-full-screen-container>
-    <div class="header">
+    <div class="header pl-4">
       <div style="flex: 2">Header</div>
       <div style="flex: 2">
         <el-tabs v-model="currentTab" @tab-click="handleTabChange">
@@ -59,15 +59,15 @@ export default {
 
 <style lang="less" scoped>
   .header {
-    height: 100px;
-    line-height: 100px;
-    background-color: red;
+    height: 50px;
+    line-height: 50px;
+    // background-color: #fff;
     font-size: 30px;
     display: flex;
     justify-content: space-between;
   }
 
   .content {
-    height: calc(~"100% - 100px");
+    height: calc(~"100% - 40px");
   }
 </style>
