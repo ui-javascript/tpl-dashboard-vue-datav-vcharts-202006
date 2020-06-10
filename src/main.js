@@ -13,9 +13,9 @@ Vue.config.productionTip = false
 Vue.use(dataV)
 Vue.use(VCharts)
 
+// 全局注册地图
 import VeMap from 'v-charts/lib/map.common'
 Vue.component(VeMap.name, VeMap)
-
 
 new Vue({
   el: '#app',

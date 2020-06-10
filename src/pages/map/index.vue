@@ -1,7 +1,7 @@
 <template>
   <div class="mapIndex">
 
-    <dv-border-box-1 class="main-container" style="width: 32%; height: 33%;">
+    <dv-border-box-1 class="main-container" style="width: 32%; height: 33%;padding: 10px;">
       <ve-map :data="chartData" />
     </dv-border-box-1>
 
