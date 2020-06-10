@@ -24,7 +24,7 @@ export const constantRoutes = [
         component: () => import('@/pages/dashboard/index'),
         name: 'Dashboard',
         meta: {
-          title: 'Dashboard',
+          title: '面板',
           icon: 'dashboard',
           affix: true
         }
@@ -34,7 +34,7 @@ export const constantRoutes = [
         component: () => import('@/pages/map/index'),
         name: 'Map',
         meta: {
-          title: 'Map',
+          title: '地图',
           icon: 'map',
           affix: true
         }

@@ -12,6 +12,8 @@
     "@jiaminghi/data-view": "^2.3.8",
     "axios": "^0.19.2",
     "echarts": "^4.8.0",
+    "echarts-gl": "^1.1.1",
+    "element-ui": "^2.13.2",
     "normalize.css": "^8.0.1",
     "screenfull": "^5.0.2",
     "v-charts": "^1.19.0",

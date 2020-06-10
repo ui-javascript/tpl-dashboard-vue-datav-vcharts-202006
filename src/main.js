@@ -1,20 +1,30 @@
 import Vue from 'vue'
-import App from './App.vue'
-import router from './router'
+import ElementUI from 'element-ui';
+import DataV from '@jiaminghi/data-view'
 import VCharts from 'v-charts'
+import VeMap from 'v-charts/lib/map.common'
 
+
+// 样式
 import 'normalize.css/normalize.css' // a modern alternative to CSS resets
+import 'element-ui/lib/theme-chalk/index.css';
 import './assets/global.less'
 
-import dataV from '@jiaminghi/data-view'
+// 组件
+import router from './router'
+import App from './App.vue'
+
+// import echarts from "echarts";
+// Vue.prototype.$echarts = echarts;
 
 Vue.config.productionTip = false
 
-Vue.use(dataV)
+// 注册组件
+Vue.use(DataV)
 Vue.use(VCharts)
-
-// 全局注册地图
-import VeMap from 'v-charts/lib/map.common'
+Vue.use(ElementUI, {
+  // size: 'medium',
+})
 Vue.component(VeMap.name, VeMap)
 
 new Vue({
