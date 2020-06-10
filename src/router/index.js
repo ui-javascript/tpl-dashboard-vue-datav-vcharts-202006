@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-Vue.use(Router)
+import BasicLayout from '@/layout/BasicLayout'
 
 export const constantRoutes = [
 //   {
@@ -16,17 +16,30 @@ export const constantRoutes = [
 //   },
   {
     path: '/',
-    redirect: '/dashboard',
-    children: [{
-      path: 'dashboard',
-      component: () => import('@/pages/index'),
-      name: 'Dashboard',
-      meta: {
-        title: 'Dashboard',
-        icon: 'dashboard',
-        affix: true
+    redirect: '/map',
+    component: BasicLayout,
+    children: [
+      {
+        path: '/dashboard',
+        component: () => import('@/pages/dashboard/index'),
+        name: 'Dashboard',
+        meta: {
+          title: 'Dashboard',
+          icon: 'dashboard',
+          affix: true
+        }
+      },
+      {
+        path: '/map',
+        component: () => import('@/pages/map/index'),
+        name: 'Map',
+        meta: {
+          title: 'Map',
+          icon: 'map',
+          affix: true
+        }
       }
-    }]
+    ]
   }
 ]
 
@@ -44,4 +57,7 @@ export function resetRouter() {
 }
 
 const router = createRouter()
+
+Vue.use(Router)
+
 export default router
